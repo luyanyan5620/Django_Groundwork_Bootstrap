@@ -1,6 +1,5 @@
 # Django_Groundwork_Bootstrap
-Django_Groundwork_Bootstrap
-Django_Groundwork_Bootstrap
+
 
 A Django tool to help you generate CRUD code on your Django project.
 
