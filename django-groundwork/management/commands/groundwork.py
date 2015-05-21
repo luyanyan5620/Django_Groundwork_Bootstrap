@@ -41,7 +41,7 @@ class Command(BaseCommand):
             
             # append to root urlconf
             f = open( os.path.join (PROJECT_ROOT , PROJECT_NAME, 'urls.py') , 'a')
-            f.write( "\nurlpatterns += patterns ('',\n (r'^%(app)s/', include('%(app)s.urls')),\n)\n" % {'app': app } )
+            f.write( "\nfrom django.conf.urls import patterns\n\n\nurlpatterns += patterns ('',\n (r'^%(app)s/', include('%(app)s.urls')),\n)\n" % {'app': app } )
             f.close()
 
 
