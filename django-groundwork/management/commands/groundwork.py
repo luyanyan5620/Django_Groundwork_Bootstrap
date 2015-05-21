@@ -18,7 +18,7 @@ class Command(BaseCommand):
         PROJECT_ROOT = os.getcwd() 
         TEMPLATE_DIR = os.path.join ( PROJECT_ROOT , 'templates')
 
-        PROJECT_NAME = PROJECT_ROOT.split('/')[-1]
+        PROJECT_NAME = PROJECT_ROOT.replace("\\", "/").split('/')[-1]
 	
         try:
             app = app_arg #args[0] # App name is the first parameter
