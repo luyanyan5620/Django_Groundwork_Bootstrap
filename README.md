@@ -61,7 +61,9 @@ project:
 **3:others**
 
 this tools base on Django-groundwork ([github address][2]),Thanks to the Author.
+
 this tools support python3 and Django(test in 1.8),add bootstrap support to make page looks fine.
+
 this tools create a template-tag to help you get dynamic attribue from dynamic object in the page.
 
 so Enjoy it!
